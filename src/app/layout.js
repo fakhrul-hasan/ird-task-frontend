@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="flex bg-gray-200">
+      <body className="flex bg-gray-200 gap-4 px-6">
         <LeftSideBar/>
         {children}
         </body>

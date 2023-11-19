@@ -2,3 +2,83 @@
 @tailwind components;
 @tailwind utilities;
 
+input[type="checkbox"] {
+    accent-color: #1FA45B;
+  }
+
+.single-thumb .range-slider__thumb[data-lower] {
+  width: 0!important;
+}
+.single-thumb .range-slider__range {
+  border-radius: 6px;
+}
+.range-slider .range-slider__range {
+  background: #1FA45B!important;
+  height: 5px!important;
+}
+.range-slider .range-slider__thumb {
+  background: #1FA45B!important;
+  width: 10px!important;
+  height: 15px!important;
+}
+
+/* slider switch  */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #1FA45B;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #1FA45B;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 36px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
