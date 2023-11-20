@@ -1,6 +1,9 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
 import LeftSideBar from "./components/LeftSideBar/LeftSideBar";
+import NavBar from "./components/NavBar/NavBar";
+import CategoriesSec from "./components/CategoriesSec/CategoriesSec";
+import SettingsSec from "./components/SettingsSec/SettingsSec";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,9 +16,20 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="flex bg-gray-200 gap-4 px-6">
-        <LeftSideBar/>
-        {children}
-        </body>
+        <LeftSideBar />
+        <div className="flex-grow">
+          <NavBar />
+          <main className="grid grid-cols-4 gap-3">
+            <div className="col-span-1">
+              <CategoriesSec />
+            </div>
+            <div className="col-span-3 flex gap-3">
+              {children}
+              <SettingsSec />
+            </div>
+          </main>
+        </div>
+      </body>
     </html>
   );
 }

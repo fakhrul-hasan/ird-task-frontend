@@ -3,7 +3,7 @@ import React from "react";
 
 const LeftSideBar = () => {
   return (
-    <div className="h-screen py-4">
+    <div className="h-screen py-4 w-28">
       <div className="bg-white h-full rounded-xl py-2 px-1 flex flex-col justify-between shadow">
         <Image src="/logo.png" className="h-16 w-20" alt="logo" height={80} width={80} />
         <div className="flex flex-col items-center justify-between gap-5">

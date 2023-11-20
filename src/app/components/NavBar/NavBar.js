@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <nav className="py-4 grid grid-cols-2 items-start w-full h-20">
       <div className="col-span-1">
-        <h4 className="text-xl">Duas Page</h4>
+        <h4 className="text-xl text-black">Duas Page</h4>
       </div>
       <div className="col-span-1 flex justify-between">
         <div className="relative w-52">
