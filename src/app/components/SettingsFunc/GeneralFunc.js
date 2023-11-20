@@ -24,10 +24,10 @@ const GeneralFunc = () => {
               }`}
             />
             <h6
-              className={`text-xs ${
+              className={`lg:text-xs ${
                 languageSec === true
                   ? "text-primary  font-medium"
-                  : "text-gray-600 font-thin"
+                  : "text-gray-600 lg:font-thin"
               }`}
             >
               General Settings
@@ -36,10 +36,10 @@ const GeneralFunc = () => {
         </div>
         {languageSec && (
           <div className="p-2 border-b border-x rounded-md space-y-2">
-            <div className="flex justify-between"><p className="text-xs">Show Arabic</p> <input type="checkbox" checked /></div>
-            <div className="flex justify-between"><p className="text-xs">Show Translation</p> <input type="checkbox" checked /></div>
-            <div className="flex justify-between"><p className="text-xs">Show Transliteration</p> <input type="checkbox" checked /></div>
-            <div className="flex justify-between"><p className="text-xs">Show Refference</p> <input type="checkbox" checked /></div>
+            <div className="flex justify-between"><p className="text-sm lg:text-xs">Show Arabic</p> <input type="checkbox" checked /></div>
+            <div className="flex justify-between"><p className="text-sm lg:text-xs">Show Translation</p> <input type="checkbox" checked /></div>
+            <div className="flex justify-between"><p className="text-sm lg:text-xs">Show Transliteration</p> <input type="checkbox" checked /></div>
+            <div className="flex justify-between"><p className="text-sm lg:text-xs">Show Refference</p> <input type="checkbox" checked /></div>
           </div>
         )}
       </div>

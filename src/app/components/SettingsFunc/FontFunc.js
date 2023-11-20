@@ -17,7 +17,7 @@ const FontFunc = () => {
   };
   return (
     <>
-      <div className="">
+      <div className="relative">
         <div
           className={`cursor-pointer flex items-center justify-between p-2 rounded-md bg-gray-100 border-l-4 ${
             fontSec === true ? "border-primary" : "border-transparent"
@@ -31,10 +31,10 @@ const FontFunc = () => {
               }`}
             />
             <h6
-              className={`text-xs ${
+              className={`lg:text-xs ${
                 fontSec === true
                   ? "text-primary  font-medium"
-                  : "text-gray-600 font-thin"
+                  : "text-gray-600 lg:font-thin"
               }`}
             >
               Font Settings
@@ -43,7 +43,7 @@ const FontFunc = () => {
         </div>
         {fontSec && (
           <div className="p-2 border-b border-x rounded-md space-y-3">
-            <p className="text-xs">Translation Font Size</p>
+            <p className="text-sm lg:text-xs">Translation Font Size</p>
             <div className="flex items-center gap-2">
               <RangeSlider
                 className="single-thumb"
@@ -55,21 +55,21 @@ const FontFunc = () => {
               <output className="text-xs">{rangeValue}</output>
             </div>
             <div className="space-y-2">
-            <p className="text-xs">Select Arabic Script</p>
+            <p className="text-sm lg:text-xs">Select Arabic Script</p>
             <select name="script" id="script" className="w-full mr-2 border p-2 rounded-md text-xs ">
-                <option value="uthmani" className="py-2">Uthmani</option>
-                <option value="indopak" className="py-2">Indopak</option>
+                <option value="uthmani" className="lg:py-2">Uthmani</option>
+                <option value="indopak" className="lg:py-2">Indopak</option>
             </select>
             </div>
             <div className="space-y-2">
-            <p className="text-xs">Arabic Font</p>
+            <p className="text-sm lg:text-xs">Arabic Font</p>
             <select name="font" id="font" className="w-full mr-2 border p-2 rounded-md text-xs ">
                 <option value="uthmani" className="py-2">Noor E Huda</option>
                 <option value="indopak" className="py-2">Noor E Hedayet</option>
                 <option value="indopak" className="py-2">Noor E Hira</option>
             </select>
             </div>
-            <p className="text-xs">Arabic Font Size</p>
+            <p className="text-sm lg:text-xs">Arabic Font Size</p>
             <div className="flex items-center gap-2">
               <RangeSlider
                 className="single-thumb"

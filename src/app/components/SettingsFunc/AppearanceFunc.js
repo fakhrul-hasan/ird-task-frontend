@@ -25,10 +25,10 @@ const AppearanceFunc = () => {
               }`}
             />
             <h6
-              className={`text-xs ${
+              className={`lg:text-xs ${
                 languageSec === true
                   ? "text-primary  font-medium"
-                  : "text-gray-600 font-thin"
+                  : "text-gray-600 lg:font-thin"
               }`}
             >
               Appearance Settings
@@ -37,7 +37,7 @@ const AppearanceFunc = () => {
         </div>
         {languageSec && (
           <div className="flex gap-2 justify-between p-3 border-b border-x rounded-md">
-            <p className="text-xs">Night Mode</p>
+            <p className="text-sm lg:text-xs">Night Mode</p>
             <label class="switch">
               <input type="checkbox" />
               <span class="slider round"></span>

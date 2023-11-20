@@ -10,7 +10,7 @@ const CategoriesSec = async () => {
   const categoryData = await getCategories();
 
   return (
-    <div className="min-w-60">
+    <div className="min-w-60 hidden lg:block">
       <div className="bg-primary text-white text-sm py-2 text-center rounded-t-md">
         Categories
       </div>

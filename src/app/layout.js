@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
             <div className="col-span-1">
               <CategoriesSec />
             </div>
-            <div className="col-span-3 flex gap-3">
+            <div className="col-span-4 lg:col-span-3 flex gap-3">
               {children}
               <SettingsSec />
             </div>

@@ -17,7 +17,7 @@ const handleLanguage=(lang)=>{
           >
             <div className="flex gap-2 items-center">
               <MdOutlineTranslate className={`bg-gray-300 p-1 rounded-full text-2xl ${languageSec === true ? 'text-primary':'text-gray-600'}`}/>
-                <h6 className={`text-xs ${languageSec === true ? 'text-primary  font-medium':'text-gray-600 font-thin'}`}>Language Settings</h6>
+                <h6 className={`text-sm lg:text-xs ${languageSec === true ? 'text-primary  font-medium':'text-gray-600 lg:font-thin'}`}>Language Settings</h6>
             </div>
           </div>
           {languageSec && (

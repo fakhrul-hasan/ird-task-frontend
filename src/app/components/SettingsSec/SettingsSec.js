@@ -5,7 +5,7 @@ import LanguageFunc from '../SettingsFunc/LanguageFunc';
 
 const SettingsSec = () => {
     return (
-        <aside className='bg-white py-3 px-1 w-64 rounded-xl'>
+        <aside className='bg-white py-3 px-1 w-64 rounded-xl hidden lg:block'>
             <h5 className='text-center py-3'>Settings</h5>
             <div className='space-y-3'>
                 <LanguageFunc/>
