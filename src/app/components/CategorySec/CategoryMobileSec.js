@@ -28,6 +28,7 @@ const CategoryMobileSec = ({ categoryData, setIsCategory }) => {
                 <div className="flex gap-1">
                   <Image
                     src="/Frame.png"
+                    className="w-auto"
                     alt="category"
                     height={30}
                     width={30}

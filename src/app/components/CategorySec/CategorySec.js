@@ -76,7 +76,7 @@ const CategorySec = ({ categoryData }) => {
               onClick={() => toggleCategory(category?.cat_id)}
             >
               <div className="flex gap-1">
-                <Image src="/Frame.png" alt="category" height={30} width={30} />
+                <Image src="/Frame.png" className="w-auto" alt="category" height={30} width={30} />
                 <div>
                   <h6 className="text-sm font-medium">
                     {category?.cat_name_en}
