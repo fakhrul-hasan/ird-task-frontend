@@ -1,6 +1,6 @@
-export const scrollToTarget = (duaId) => {
-    if (duaId) {
-      const element = document.getElementById(`${duaId}`);
+export const scrollToTarget = (Id) => {
+    if (Id) {
+      const element = document.getElementById(`${Id}`);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }

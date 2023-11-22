@@ -4,7 +4,6 @@ import NavBar from "./components/NavBar/NavBar";
 import CategoriesSec from "./components/CategoriesSec/CategoriesSec";
 import SettingsSec from "./components/SettingsSec/SettingsSec";
 import "./globals.css";
-import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
